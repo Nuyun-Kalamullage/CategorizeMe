@@ -1,0 +1,7 @@
+Create a react project using "npm create vite@latest [application_Name]" command.
+Download necessary node modules to the project using "npm install" command.
+Run the React application using "npm run dev" command.
+We can configure the server side configs in the "vite.config.js" file like server port.
+We can see the dependencies that can be use in react app in "package.json" file.
+Main HTML file is index.html and it has div named root it is the div that use to inject react script using main.jsx file
+We can add components to inside of this root div.
