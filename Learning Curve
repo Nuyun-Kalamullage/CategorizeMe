@@ -5,3 +5,4 @@ We can configure the server side configs in the "vite.config.js" file like serve
 We can see the dependencies that can be use in react app in "package.json" file.
 Main HTML file is index.html and it has div named root it is the div that use to inject react script using main.jsx file
 We can add components to inside of this root div.
+We can Create a commonent sample code using "rafce" command in component.jsx file.

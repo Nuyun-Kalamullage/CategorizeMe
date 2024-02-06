@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import { listTasks } from '../services/TaskService'
+import {useNavigate} from 'react-router-dom'
 
 const ListTaskComponent = () => {
     const [tasks, setTasks] = useState([])
+    const navigator = useNavigate();
     useEffect(
         ()=>{
         listTasks().then((response)=>
@@ -14,9 +16,13 @@ const ListTaskComponent = () => {
         })
     },
     [])
+    function addNewTTask(){
+        navigator('/add-task');
+    }
   return (
     <div className='container'>
         <h2 className='text-center'>List Of Tasks</h2>
+        <button className='btn btn-primary mb-2' onClick={addNewTTask}> Add New Task </button>
         <table className='table table-striped table-bordered'>
             <thead>
                 <tr>
